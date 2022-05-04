@@ -31,7 +31,7 @@ const Blogs = () => {
                 <div className="blog p-3">
                     <h2 className="">Why am I using firebase?</h2>
                     <h4 className='px-4'>I am using Firebase to implement authentication and host a site.</h4>
-                    <h2 className="">Other options to implement authentication:   </h2>
+                    <h2 className="">Other options to implement authentication: </h2>
                     <h4 className="px-4">
                         <ul>
                             <li>Password-based authentication</li>
