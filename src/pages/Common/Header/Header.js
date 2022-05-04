@@ -17,6 +17,7 @@ const Header = () => {
                                 <Nav.Link href="/blogs"><h4>Blogs</h4></Nav.Link>
                                 <Nav.Link href="/services"><h4>Services</h4></Nav.Link>
                                 <Nav.Link href="/chackout"><h4>Chackout</h4></Nav.Link> 
+                                <Nav.Link href="/about"><h4>About</h4></Nav.Link> 
                             </div>
                             <div className="d-lg-flex ms-lg-5 ">
                                 <Nav.Link href="/login"><h4>Login</h4></Nav.Link> 

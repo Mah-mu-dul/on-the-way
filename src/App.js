@@ -9,6 +9,7 @@ import Blogs from './pages/Blogs/Blogs';
 import Notfound from './pages/Notfound';
 import Chackout from './pages/Private/Chackout';
 import Services from './pages/Home/Services/Services';
+import About from './pages/About/About';
 function App() {
   return (
     <div >
@@ -24,6 +25,7 @@ function App() {
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Signup></Signup>}></Route>
+        <Route path='/ABOUT' element={<About></About>}></Route>
         <Route path='/services/:servicesId' element={<Chackout></Chackout>}></Route>
         
         
