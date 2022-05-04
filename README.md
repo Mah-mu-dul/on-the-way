@@ -3,14 +3,17 @@ live sie link :
 
 features of my website:
 * you can find some travel pakages. 
-* you can reade about me, learn about me.
-* you can learn my previous events. 
-* 
+* you can read about me, learn about me.
+* you can see my previous events.
+* you can hire me as a travel guid through chackout a pakage.
+* You can register on my site. that will help you to find the best travell pakages.
 
 
-there have what we did today. 
-* create react app
-* install react router
-* install firebase
-* install react bootstrap
-* 
+technologies what I am using this website:
+* Bootstrap
+* React
+* Reactbootsrap
+* Firebase
+* CSS
+* React router
+
