@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import './Signup.css'
+
 import'../Login/Login.css'
 const Signup = () => {
     return (
@@ -33,8 +34,7 @@ const Signup = () => {
                 <div className='or'></div>
             </div>
             <div className="other mx-auto">
-                <Button className='bg-light text-dark mx-auto rounded-pill w-50 '>Register with Google </Button>
-                <Button className='bg-light text-dark mx-auto rounded-pill w-50 '>Register with facebook  </Button>
+                <Button className='google bg-light text-dark mx-auto rounded-pill w-50 '>Register with Google </Button>
             </div>
             
         </div>

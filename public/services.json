@@ -1,0 +1,22 @@
+[
+    {"id": 1,
+         "name": "Bali trip",
+          "price": 75813.00, 
+          "img": "https://img.freepik.com/free-photo/kelingking-beach-sunset-nusa-penida-island-bali-indonesia_335224-338.jpg?t=st=1651238135~exp=1651238735~hmac=ac99c9344f49dbd8ffb98a876860d297b6954e5950d86d8115c6b088d65049c2&w=996", 
+          "point": "T- Rex point",
+           "des": "Bali is a super budget-friendly destination, so it's pretty easy to visit the island and not have to worry about breaking the bank.Though often busy with tourists, Bali is still surprisingly affordable if you know where to look."
+    },
+    { "id": 2,
+         "name": "Hot air balloon ", 
+         "price": 20000.00, "img": "https://independenttravelcats.com/wp-content/uploads/2020/06/chateau-doex-balloon-festival-52.jpg", 
+         "point": "switzerland" ,
+          "des": "Would you like to see the Alps in Switzerland with a bird's eye view? The Gstaad Palace warmly recommend you take a Hot Air Balloon ride during your stay! The microclimate of our region lends itself perfectly to balloon rides - clear & sunny conditions are ideal for getting great views. "
+    },
+    { "id": 3, 
+        "name": "manali trip",
+         "price": 7813.00,
+          "img": "https://img.freepik.com/free-photo/landscape-view-fields-manali-mountains-india_181624-30083.jpg?t=st=1651415387~exp=1651415987~hmac=be16a269bf4f0cd1a8c7bb8548eadc7c1e034cc1d2c4dbf699fb88fdd8b8f8a4&w=1060", 
+         "point": "Manali mountains ", 
+         "des": "Planning to book Manali packages from Manali? Look no beyond Yatra. Find an array of Manali tour packages from Manali that can be customised, from short-term weekend stays to long-term ones. Go through our offers and avail seasonal discounts on domestic holiday packages with star hotel stays thrown into the mix."
+    }
+]
