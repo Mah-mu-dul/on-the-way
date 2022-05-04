@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { Google } from 'react-bootstrap-icons';
 import './Login.css'
 
 const Login = () => {
@@ -26,6 +27,9 @@ const Login = () => {
                 <div className='or'></div>
                 <p className='mx-2'>or</p>
                 <div className='or'></div>
+            </div>
+            <div className="other mx-auto">
+                <Button className='google bg-dark text-white mx-auto rounded-pill w-50 '><Google className='me-2' color="white" size={20} />Login with Google </Button>
             </div>
         </div>
     );

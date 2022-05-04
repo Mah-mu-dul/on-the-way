@@ -10,12 +10,19 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand href="/"><h3 className='mx-auto '>On The way</h3></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mx-auto me-auto ">
-                            <Nav.Link href="/home"><h4>Home</h4></Nav.Link>
-                            <Nav.Link href="/blogs"><h4>Blogs</h4></Nav.Link>
-                            <Nav.Link href="/services"><h4>Services</h4></Nav.Link> 
-                            <Nav.Link href="/chackout"><h4>Chackout</h4></Nav.Link> 
+                    <Navbar.Collapse id="basic-navbar-nav ">
+                        <Nav className="mx-auto  me-auto ">
+                            <div className="d-lg-flex me-lg-5">
+                                <Nav.Link href="/home"><h4>Home</h4></Nav.Link>
+                                <Nav.Link href="/blogs"><h4>Blogs</h4></Nav.Link>
+                                <Nav.Link href="/services"><h4>Services</h4></Nav.Link>
+                                <Nav.Link href="/chackout"><h4>Chackout</h4></Nav.Link> 
+                            </div>
+                            <div className="d-lg-flex ms-lg-5 ">
+                                <Nav.Link href="/login"><h4>Login</h4></Nav.Link> 
+                                <Nav.Link href="/register"><h4>Register</h4></Nav.Link> 
+
+                            </div>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

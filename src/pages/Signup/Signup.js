@@ -2,7 +2,9 @@ import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import './Signup.css'
 
+
 import'../Login/Login.css'
+import { ArrowRight, Google } from 'react-bootstrap-icons';
 const Signup = () => {
     return (
         <div className='register   mx-auto mt-5'>
@@ -34,7 +36,7 @@ const Signup = () => {
                 <div className='or'></div>
             </div>
             <div className="other mx-auto">
-                <Button className='google bg-light text-dark mx-auto rounded-pill w-50 '>Register with Google </Button>
+                <Button className='google bg-dark text-white mx-auto rounded-pill w-50 '><Google className='me-2' color="white" size={20} />   Register with Google </Button>
             </div>
             
         </div>
