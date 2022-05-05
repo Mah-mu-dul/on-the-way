@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Google } from 'react-bootstrap-icons';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
 
@@ -14,7 +14,10 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    
+
+
+    // const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+
     const emailRef = useRef('')
     const passwordRef = useRef('')
     const navigate = useNavigate()
@@ -63,10 +66,8 @@ const Login = () => {
                 <p className='mx-2'>or</p>
                 <div className='or'></div>
             </div>
-            <div className="other mx-auto">
-                <Button className='google bg-dark text-white mx-auto rounded-pill px-5 '><Google className='me-2' color="white" size={20} />Login with Google </Button>
-
-            </div>
+            <SocialLogin></SocialLogin>
+            
             <p className="text-end">new to here?  than <Link to={'/register'} className="text-danger text-decoration-none" onClick={navigateRegister}>Register</Link></p>
         </div>
     );

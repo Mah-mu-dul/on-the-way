@@ -4,10 +4,11 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Signup.css'
 
 
-import'../Login/Login.css'
-import {  Google } from 'react-bootstrap-icons';
+import '../Login/Login.css'
+import { Google } from 'react-bootstrap-icons';
 import { Link, useHref, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import SocialSignup from './SocialSignup';
 const Signup = () => {
     const [
         createUserWithEmailAndPassword,
@@ -17,12 +18,12 @@ const Signup = () => {
     ] = useCreateUserWithEmailAndPassword(auth);
 
 
-    const nameRef = useRef('') 
-    const emailRef = useRef('') 
+    const nameRef = useRef('')
+    const emailRef = useRef('')
     const passwordRef = useRef('')
     const navigate = useNavigate()
 
-    const navigateLogin = () =>{
+    const navigateLogin = () => {
 
         navigate('/login')
 
@@ -33,7 +34,7 @@ const Signup = () => {
         const name = nameRef.current.value
         const email = emailRef.current.value
         const password = passwordRef.current.value
-        createUserWithEmailAndPassword(email,password)
+        createUserWithEmailAndPassword(email, password)
     }
 
     return (
@@ -57,7 +58,7 @@ const Signup = () => {
                 </Form.Group>
 
                 <Button variant="primary" type="submit">
-                  Register
+                    Register
                 </Button>
             </Form>
             <div className="orHolder">
@@ -65,12 +66,9 @@ const Signup = () => {
                 <p className='mx-2'>or</p>
                 <div className='or'></div>
             </div>
-            <div className="other mx-auto">
-                <Button className='google bg-dark text-white mx-auto rounded-pill px-5 '><Google className='me-2' color="white" size={20} />   Register with Google </Button>
-
-            </div>
+            <SocialSignup></SocialSignup>
             <p className="text-end">Already have an account? <Link to={'/login'} className="text-danger text-decoration-none" onClick={navigateLogin}>Login</Link></p>
-            
+
         </div>
     );
 };
