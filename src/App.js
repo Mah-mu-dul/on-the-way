@@ -10,6 +10,7 @@ import Notfound from './pages/Notfound';
 import Chackout from './pages/Private/Chackout';
 import Services from './pages/Home/Services/Services';
 import About from './pages/About/About';
+import RequreAuth from './pages/Login/RequreAuth/RequreAuth';
 function App() {
   return (
     <div >
@@ -21,15 +22,21 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-        <Route path='/Chackout' element={<Chackout></Chackout>}></Route>
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Signup></Signup>}></Route>
         <Route path='/ABOUT' element={<About></About>}></Route>
-        <Route path='/services/:servicesId' element={<Chackout></Chackout>}></Route>
-        
-        
-        
+        <Route path='/chackout/:servicesId' element={
+          <RequreAuth><Chackout></Chackout></RequreAuth>}></Route>
+    
+    
+          <Route path='/Chackout' element={
+          <RequreAuth><Chackout></Chackout></RequreAuth>
+          }></Route>
+      
+      
+
+
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
 
