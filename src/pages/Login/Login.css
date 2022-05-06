@@ -28,7 +28,12 @@ justify-content:center;
         width: 90%;
 
     }
-
+.batn{
+background-color: white;
+box-shadow: none;
+border: none;
+color: rgb(217, 23, 23);
+}
 }
 
 @media (min-width: 992px) {

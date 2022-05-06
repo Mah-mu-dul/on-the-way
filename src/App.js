@@ -11,6 +11,7 @@ import Chackout from './pages/Private/Chackout';
 import Services from './pages/Home/Services/Services';
 import About from './pages/About/About';
 import RequreAuth from './pages/Login/RequreAuth/RequreAuth';
+import Feedback from './pages/Feedback/Feedback';
 function App() {
   return (
     <div >
@@ -25,7 +26,9 @@ function App() {
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Signup></Signup>}></Route>
-        <Route path='/ABOUT' element={<About></About>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
+        <Route path='/Home' element={<Feedback></Feedback>}></Route>
+        
         <Route path='/chackout/:servicesId' element={
           <RequreAuth><Chackout></Chackout></RequreAuth>}></Route>
     
@@ -39,6 +42,7 @@ function App() {
 
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
+    
 
       <Footer></Footer>
 
